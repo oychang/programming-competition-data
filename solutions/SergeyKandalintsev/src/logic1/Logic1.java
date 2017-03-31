@@ -304,12 +304,7 @@ public class Logic1
      */
     public static int teenSum( int a, int b )
     {
-        return isTeen( a ) || isTeen( b ) ? 19 : a + b;
-    }
-
-    private static boolean isTeen( int n )
-    {
-        return 13 <= n && n <= 19;
+        return ( 13 <= a && a <= 19 ) || ( 13 <= b && b <= 19 ) ? 19 : a + b;
     }
 
     /**

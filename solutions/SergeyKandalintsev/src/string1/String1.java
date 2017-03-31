@@ -359,12 +359,6 @@ public class String1 {
         return a.substring(a.length() - minLength) + b.substring(b.length() - minLength);
     }
 
-    public String extraFront(String str) {
-        String front = str.length() >= 2 ? str.substring(0, 2) : str;
-
-        return front + front + front;
-    }
-
     /**
      * Given a string, if a length 2 substring appears at both its beginning and end, return a string without the
      * substring at the beginning, so "HelloHe" yields "lloHe". The substring may overlap with itself, so "Hi"
